@@ -44,3 +44,36 @@
 wget [https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb](https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb)
 sudo apt-get update
 sudo apt-get install -y ./google-chrome-stable_current_amd64.deb libnss3 libatk1.0-0t64 libatk-bridge2.0-0t64 libcups2t64 libdrm2 libxkbcommon0 libxcomposite1 libxdamage1 libxrandr2 libgbm1 libasound2t64
+```
+
+### 2. 初始化 Python 環境
+```bash
+pip install -r requirements.txt
+pip install webdriver-manager langchain-community langchain-core
+```
+
+### 3. 配置 AI 引擎 (Ollama)
+
+```bash
+# 安裝 Ollama
+curl -fsSL [https://ollama.com/install.sh](https://ollama.com/install.sh) | sh
+
+# 啟動服務 (背景執行)
+ollama serve > ollama.log 2>&1 &
+
+# 下載預設模型 (Gemma:2b)
+ollama pull gemma:2b
+```
+
+### 4. 啟動系統
+
+```bash
+python -m streamlit run app/main.py
+⚠️ 注意事項
+AI 模型啟動: 若 Codespaces 重啟，請重新執行 ollama serve & 以確保 API 服務正常。
+```
+
+### 防爬蟲機制: 系統會模擬 User-Agent 以降低被電商平台阻擋之機率。
+
+### 📄 授權說明
+本專案僅供學術研究與電商輔助測試使用，請遵守各平台的使用者協議與著作權法規。
