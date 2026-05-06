@@ -72,9 +72,7 @@ python -m streamlit run app/main.py
 ```
 ⚠️ 注意事項
 AI 模型啟動: 若 Codespaces 重啟，請重新執行 ollama serve & 以確保 API 服務正常。
-
-
-### 防爬蟲機制: 系統會模擬 User-Agent 以降低被電商平台阻擋之機率。
+防爬蟲機制: 系統會模擬 User-Agent 以降低被電商平台阻擋之機率。
 
 ### 📄 授權說明
 本專案僅供學術研究與電商輔助測試使用，請遵守各平台的使用者協議與著作權法規。
