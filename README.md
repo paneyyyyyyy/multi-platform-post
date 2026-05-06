@@ -69,9 +69,10 @@ ollama pull gemma:2b
 
 ```bash
 python -m streamlit run app/main.py
+```
 ⚠️ 注意事項
 AI 模型啟動: 若 Codespaces 重啟，請重新執行 ollama serve & 以確保 API 服務正常。
-```
+
 
 ### 防爬蟲機制: 系統會模擬 User-Agent 以降低被電商平台阻擋之機率。
 
