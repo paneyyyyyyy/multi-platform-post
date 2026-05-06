@@ -41,7 +41,7 @@
 ### 1. 安裝系統依賴項目
 在終端機 (Terminal) 安裝 Google Chrome 與執行所需的 Linux 函式庫：
 ```bash
-wget [https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb](https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb)
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt-get update
 sudo apt-get install -y ./google-chrome-stable_current_amd64.deb libnss3 libatk1.0-0t64 libatk-bridge2.0-0t64 libcups2t64 libdrm2 libxkbcommon0 libxcomposite1 libxdamage1 libxrandr2 libgbm1 libasound2t64
 ```
